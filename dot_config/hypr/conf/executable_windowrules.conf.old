@@ -1,0 +1,115 @@
+#-----------------------------------------------------------------------------------------------------------
+# WINDOW RULES
+#-----------------------------------------------------------------------------------------------------------
+
+windowrule = float,^(pavucontrol)$
+windowrule = pin,^(pavucontrol)$
+windowrule = size 900 500,^(pavucontrol)$
+
+windowrule = float,^(kitty)$
+windowrule = size 640 400,^(kitty)$
+
+windowrule = float,class:^(Material Settings)$
+
+layerrule = blur,^(ignis_BAR.*)$
+layerrule = noanim,^(ignis_NOTIFICATION_POPUP.*)$
+
+# `hyprctl clients` get class, title...
+
+# Float Necessary Windows
+
+windowrulev2 = float, title: ^(Open Folder)$
+windowrulev2 = size 55% 60%, title: ^(Open Folder)$
+
+windowrulev2 = float, title: ^(Open File)$
+windowrulev2 = size 55% 60%, title: ^(Open File)$
+
+windowrule = float, Rofi
+windowrulev2 = float, class: ^()$, title: ^(Picture in picture)$
+windowrulev2 = float, class: ^(org.mozilla.firefox)$, title: ^(Picture-in-Picture)$
+windowrulev2 = float, class: ^(brave)$, title: ^(Save File)$
+windowrulev2 = float, class: ^(brave)$, title: ^(Open File)$
+windowrulev2 = float, class: ^(LibreWolf)$, title: ^(Picture-in-Picture)$
+windowrulev2 = float, class: ^(blueman-manager)$
+windowrulev2 = float, class: ^(xdg-desktop-portal-gtk)$
+windowrulev2 = float, class: ^(xdg-desktop-portal-kde)$
+windowrulev2 = float, class: ^(xdg-desktop-portal-hyprland)$
+windowrulev2 = float, class: ^(org.kde.polkit-kde-authentication-agent-1)$
+windowrulev2 = float, class: ^(zenity)$
+windowrulev2 = float, class: ^()$, title: ^(Steam - Self Updater)$
+
+# Increase the opacity
+windowrulev2 = opacity 0.92, class: (xdg-desktop-portal-gtk)
+windowrulev2 = opacity 0.92, class: (thunar)
+windowrulev2 = opacity 0.92, class: (Thunar)
+windowrulev2 = opacity 0.92, class: (nautilus)
+windowrulev2 = opacity 0.96, class: (discord)
+windowrulev2 = opacity 0.96, class: (armcord)
+windowrulev2 = opacity 0.96, class: (webcord)
+windowrulev2 = opacity 0.96, class: (vesktop)
+
+# foot
+windowrulev2 = opacity 0.90, class: (foot)
+
+# manga reader
+windowrulev2 = fullscreen, class: (tachidesk-sorayomi)
+
+# firefox PiP
+windowrulev2 = noinitialfocus, title: ^(Picture-in-Picture)$
+windowrulev2 = size 15% 20%, title: ^(Picture-in-Picture)$
+windowrulev2 = move 100%-w-20, title: ^(Picture-in-Picture)$
+windowrulev2 = pin, title: ^(Picture-in-Picture)$
+
+# resolve media select
+windowrulev2 = float, title: ^(Import Media)$
+windowrulev2 = size 55% 60%, title: ^(Import Media)$
+windowrulev2 = move -50% -50%, title: ^(Import Media)$
+
+# krita
+windowrulev2 = float, title:^(Create new document — Krita)$
+windowrulev2 = size 55% 60%, title:^(Create new document — Krita)$
+windowrulev2 = move center, title:^(Create new document — Krita)$
+
+# imv image viewer
+windowrule = float, imv
+windowrule = size 55% 60%, imv
+windowrule = move center, imv
+
+# pavucontrol
+windowrule = float, pavucontrol
+windowrule = size 55% 60%, pavucontrol
+windowrule = move center, pavucontrol
+
+# mpv
+windowrule = float, mpv
+windowrule = move 25%-, mpv
+windowrule = size 55% 60%, mpv
+
+windowrule = float, danmufloat
+windowrule = move 25%-, danmufloat
+windowrule = pin, danmufloat
+windowrule = rounding 5, danmufloat
+windowrule = size 960 540, danmufloat
+
+windowrule = float, termfloat
+windowrule = move 25%-, termfloat
+windowrule = size 960 540, termfloat
+windowrule = rounding 5, termfloat
+
+windowrule = float, nemo
+windowrule = move 25%-, nemo
+windowrule = size 960 540, nemo
+
+windowrule = opacity 0.95, title: Telegram
+windowrule = opacity 0.95, title: QQ
+windowrule = opacity 0.95, title: NetEase Cloud Music Gtk4
+
+windowrule = animation slide right, kitty
+windowrule = animation slide right, alacritty
+
+windowrule = float, ncmpcpp
+windowrule = move 25%-, ncmpcpp
+windowrule = size 960 540, ncmpcpp
+
+windowrule = noblur, ^(firefox)$
+windowrule = noblur, ^(waybar)$
