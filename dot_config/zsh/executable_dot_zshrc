@@ -41,6 +41,7 @@ eval "$(bluebuild completions zsh)"
 
 # aliases
 alias reload='systemctl --user daemon-reload'
+alias wall-set='~/.config/hypr/scripts/wall-set.sh'
 
 # image downloader
 gallery-dl () {
