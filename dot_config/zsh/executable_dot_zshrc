@@ -39,6 +39,9 @@ eval "$(starship init zsh)"
 # bluebuild
 eval "$(bluebuild completions zsh)"
 
+# pipx
+eval "$(register-python-argcomplete pipx)"
+
 # aliases
 alias reload='systemctl --user daemon-reload'
 alias wall-set='~/.config/hypr/scripts/wall-set.sh'
