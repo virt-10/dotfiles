@@ -1,0 +1,5 @@
+@define-color foreground #cdd6f4;
+@define-color color1 #6c7086; /* background */
+@define-color color2 #f38ba8; /* urgent */
+@define-color color3 #a6adc8; /* selected*/
+@define-color color4 #7f849c; /* hover */
