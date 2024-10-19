@@ -28,3 +28,6 @@ IMAGE=$(gum choose --height=30 --selected.bold --selected.underline "${IMAGES[@]
 # overwrite wallpaper
 cp --force "${IMAGE}" "${DEST_DIR}/wallpaper"
 echo "Copied ${IMAGE} to ${DEST_DIR}/wallpaper."
+
+# restart wallpaper app
+killall hyprpaper && hyprpaper & disown
