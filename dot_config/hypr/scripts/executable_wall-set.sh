@@ -30,4 +30,4 @@ cp --force "${IMAGE}" "${DEST_DIR}/wallpaper"
 echo "Copied ${IMAGE} to ${DEST_DIR}/wallpaper."
 
 # restart wallpaper app
-killall hyprpaper && hyprpaper & disown
+killall -e hyprpaper && hyprpaper & disown
