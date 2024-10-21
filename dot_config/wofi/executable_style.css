@@ -1,27 +1,32 @@
+@define-color text rgb(205, 214, 244);
+@define-color selected rgba(116, 199, 236, 0.5);
+@define-color background rgba(30, 30, 46, 0.5);
+@define-color background-alt rgba(17, 17, 27, 0.5);
+
 * {
     font-family: "Source Code Pro";
 }
 
 window {
-    background-color: #3b4252;
+    background-color: @background;
 }
 
 #input {
     margin: 5px;
     border-radius: 0px;
     border: none;
-    background-color: #3b4252;
-    color: white;
+    background-color: @background;
+    color: @text;
 }
 
 #inner-box {
-    background-color: #383c4a;
+    background-color: @background;
 }
 
 #outer-box {
     margin: 2px;
     padding: 10px;
-    background-color: #383c4a;
+    background-color: @background;
 }
 
 #scroll {
@@ -30,15 +35,15 @@ window {
 
 #text {
     padding: 4px;
-    color: white;
+    color: @text;
 }
 
 #entry:nth-child(even) {
-    background-color: #404552;
+    background-color: @background-alt;
 }
 
 #entry:selected {
-    background-color: #4c566a;
+    background-color: @selected;
 }
 
 #text:selected {

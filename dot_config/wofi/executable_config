@@ -5,3 +5,4 @@ term=foot
 mode=drun
 insensitive=true
 gtk-dark=true
+columns=1
