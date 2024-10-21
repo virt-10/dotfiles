@@ -26,7 +26,10 @@ wallpaper_Selector() {
     echo "Copied ${IMAGE} to ${DEST_DIR}/wallpaper."
 
     # restart wallpaper app
-    killall -e hyprpaper && hyprpaper & disown
+    killall -e hyprpaper || true > /dev/null 2>&1
+    sleep 1
+    nohup hyprpaper > /dev/null 2>&1 & disown
+    sleep 1
 }
 
 # profile selector

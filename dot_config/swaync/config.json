@@ -86,6 +86,10 @@
         {
           "label": "󰂯",
           "command": "blueman-manager"
+        },
+        {
+          "label": "󰋫",
+          "command": "foot -- bash -c '${HOME}/.config/hypr/scripts/wall-set.sh'"
         }
       ]
     }
