@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 
+
 # ls aliases
 if [ "$(command -v eza)" ]; then
     alias ll='eza -l --icons=auto --group-directories-first'
