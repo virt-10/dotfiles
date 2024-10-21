@@ -1,3 +1,7 @@
+@define-color text rgb(205, 214, 244);
+@define-color activeWorkspace rgba(116, 199, 236, 0.5);
+@define-color background rgba(108, 112, 134, 0.5);
+
 * {
     border: none;
     border-radius: 0;
@@ -8,23 +12,24 @@
 }
 
 window#waybar {
-    background: rgba(43, 48, 59, 0.5);
-    border-bottom: 0.1rem solid rgba(100, 114, 125, 0.5);
-    color: white;
+    background: @background;
+    border-bottom: 0.1rem solid @background;
+    color: @text;
 }
 
 tooltip {
-    background: rgba(43, 48, 59, 0.5);
-    border: 0.1rem solid rgba(100, 114, 125, 0.5);
+    background: @background;
+    border: 0.1rem solid @background;
 }
+
 tooltip label {
-    color: white;
+    color: @text;
 }
 
 #workspaces button {
     padding: 0 0.1rem;
     background: transparent;
-    color: white;
+    color: @text;
     border-bottom: 0.1rem solid transparent;
 }
 
@@ -34,7 +39,7 @@ tooltip label {
 } */
 
 #workspaces button.active {
-    background: lightseagreen;
+    background: @activeWorkspace;
 }
 
 #clock,
@@ -54,7 +59,7 @@ tooltip label {
 }
 
 #clock {
-    background-color: slategrey;
+    background-color: @background;
 }
 
 /* #battery {
@@ -66,13 +71,6 @@ tooltip label {
     color: white;
     background-color: palevioletred;
 } */
-
-@keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: black;
-    }
-}
 
 /* #battery.warning:not(.charging) {
     background: #f53c3c;
