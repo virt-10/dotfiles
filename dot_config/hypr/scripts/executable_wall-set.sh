@@ -14,7 +14,7 @@ wallpaper_Selector() {
     IMAGES=("${WALLPAPER_DIR}"/*.{jpg,jpeg,png})
     # Check if any images were found
     if [[ ${#IMAGES[@]} -eq 0 ]]; then
-        echo "No images found in ${IMAGE_DIR}."
+        echo "No images found in ${WALLPAPER_DIR}."
         exit 1
     fi
 
@@ -39,7 +39,7 @@ profile_Selector() {
     IMAGES=("${PROFILE_DIR}"/*.{jpg,jpeg,png})
     # Check if any images were found
     if [[ ${#IMAGES[@]} -eq 0 ]]; then
-        echo "No images found in ${IMAGE_DIR}."
+        echo "No images found in ${PROFILE_DIR}."
         exit 1
     fi
 
@@ -53,10 +53,10 @@ profile_Selector() {
 
 SELECTION=$(gum choose --height=30 --selected.bold --selected.underline "profile" "wallpaper")
 
-if [[ "$SELECTION" == "profile" ]]; then
+if [[ "${SELECTION}" == "profile" ]]; then
     echo "You selected Profile."
     profile_Selector
-elif [[ "$SELECTION" == "wallpaper" ]]; then
+elif [[ "${SELECTION}" == "wallpaper" ]]; then
     echo "You selected Wallpaper."
     wallpaper_Selector
 else
