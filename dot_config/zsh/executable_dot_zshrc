@@ -7,6 +7,10 @@ setopt COMPLETE_IN_WORD
 # case insensitive completion
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
+# jump to <- or ->
+bindkey "^[[1;5D" backward-word
+bindkey "^[[1;5C" forward-word
+
 ## keep background processes at full speed
 #setopt NOBGNICE
 ## restart running processes on exit
@@ -34,13 +38,13 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 source ~/.config/zsh/bling.sh
 
 # starship
-eval "$(starship init zsh)"
+eval "$(starship init zsh || true)"
 
 # bluebuild
-eval "$(bluebuild completions zsh)"
+eval "$(bluebuild completions zsh || true)"
 
 # pipx
-eval "$(register-python-argcomplete pipx)"
+eval "$(register-python-argcomplete pipx || true)"
 
 # aliases
 alias reload='systemctl --user daemon-reload'
