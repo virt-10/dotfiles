@@ -1,3 +1,6 @@
+
+#------------------#
+
 autoload -U compinit
 compinit
 
@@ -34,31 +37,10 @@ bindkey "^[[1;5C" forward-word
 # autoload -U colors
 #colors
 
-# bling
-source ~/.config/zsh/bling.sh
+#------------------#
 
-# starship
-eval "$(starship init zsh || true)"
-
-# bluebuild
-eval "$(bluebuild completions zsh || true)"
-
-# pipx
-eval "$(register-python-argcomplete pipx || true)"
-
-# aliases
-alias reload='systemctl --user daemon-reload'
-alias wall-set='~/.config/hypr/scripts/wall-set.sh'
-alias get-icons='wget -qO- https://git.io/papirus-icon-theme-install | env DESTDIR="$HOME/.local/share/icons" sh'
-
-# image downloader
-gallery-dl () {
-    podman run \
-    --interactive \
-    --rm \
-    --tty \
-    --volume ~/Containers/Gallery-dl:/etc/gallery-dl:z \
-    --volume ~/Containers/Gallery-dl/gallery-dl.conf:/etc/gallery-dl.conf:z \
-    ghcr.io/mikf/gallery-dl:latest \
-    "$@"
-}
+# source scripts
+source ~/.config/zsh/scripts/bling.sh
+source ~/.config/zsh/scripts/completions.sh
+source ~/.config/zsh/scripts/aliases.sh
+source ~/.config/zsh/scripts/containers.sh

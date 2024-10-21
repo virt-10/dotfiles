@@ -18,5 +18,6 @@ if [ "$(command -v ug)" ]; then
     alias xzfgrep='ug -zF'
 fi
 
-eval "$(atuin init zsh)"
-eval "$(zoxide init zsh)"
+eval "$(atuin init zsh || true)"
+eval "$(zoxide init zsh || true)"
+eval "$(starship init zsh || true)"
