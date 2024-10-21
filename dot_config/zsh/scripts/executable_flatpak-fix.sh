@@ -22,8 +22,8 @@ for flag in "${flags[@]}"; do
     runtime/org.freedesktop.Platform.GL.default/x86_64/22.08-extra
 
     echo -e "\n\n\n${BLUE}Blacklisting MESA for: ${flag}${RESET}\n\n\n"
-    flatpak mask "${flag}" runtime/org.freedesktop.Platform.GL.default/x86_64/23.08
-    flatpak mask "${flag}" runtime/org.freedesktop.Platform.GL.default/x86_64/23.08-extra
-    flatpak mask "${flag}" runtime/org.freedesktop.Platform.GL.default/x86_64/24.08
-    flatpak mask "${flag}" runtime/org.freedesktop.Platform.GL.default/x86_64/24.08-extra
+    flatpak mask "${flag}" runtime/org.freedesktop.Platform.GL.default/x86_64/23.08 \
+    runtime/org.freedesktop.Platform.GL.default/x86_64/23.08-extra \
+    runtime/org.freedesktop.Platform.GL.default/x86_64/24.08 \
+    runtime/org.freedesktop.Platform.GL.default/x86_64/24.08-extra
 done
