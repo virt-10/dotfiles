@@ -59,10 +59,10 @@
     },
     "label": {
       "max-lines": 1,
-      "text": " "
+      "text": ""
     },
     "mpris": {
-      "image-size": 96,
+      "image-size": 25%,
       "image-radius": 12
     },
     "volume": {
@@ -86,10 +86,6 @@
         {
           "label": "󰂯",
           "command": "blueman-manager"
-        },
-        {
-          "label": "",
-          "command": "nwg-look"
         }
       ]
     }
