@@ -45,6 +45,7 @@ eval "$(register-python-argcomplete pipx)"
 # aliases
 alias reload='systemctl --user daemon-reload'
 alias wall-set='~/.config/hypr/scripts/wall-set.sh'
+alias get-icons='wget -qO- https://git.io/papirus-icon-theme-install | env DESTDIR="$HOME/.local/share/icons" sh'
 
 # image downloader
 gallery-dl () {
