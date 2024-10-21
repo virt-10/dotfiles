@@ -1,6 +1,6 @@
-@define-color text rgb(205, 214, 244);
+@define-color text rgba(205, 214, 244, 1.0);
 @define-color activeWorkspace rgba(116, 199, 236, 0.5);
-@define-color background rgba(108, 112, 134, 0.5);
+@define-color background rgba(17, 17, 27, 0.5);
 
 * {
     border: none;

@@ -1,4 +1,4 @@
-@define-color text rgb(205, 214, 244);
+@define-color text rgba(205, 214, 244, 1.0);
 @define-color selected rgba(116, 199, 236, 0.5);
 @define-color background rgba(30, 30, 46, 0.5);
 @define-color background-alt rgba(17, 17, 27, 0.5);
