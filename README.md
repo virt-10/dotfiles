@@ -2,7 +2,9 @@
 
 > [!IMPORTANT]
 > Chezmoi will overwrite `global` flatpak `overrides`
-> Located in `~/.local/share/flatpak/overrides/global`<br>
+> Located in `~/.local/share/flatpak/overrides/global`
+>
+> Only for nvidia gpu's<br>
 
 # Changing wallapapers
 
