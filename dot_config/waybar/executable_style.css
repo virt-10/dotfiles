@@ -1,12 +1,15 @@
 @define-color text rgba(205, 214, 244, 1.0);
+@define-color hover rgba(255, 255, 255, 0.1);
 @define-color activeWorkspace rgba(116, 199, 236, 0.5);
 @define-color background rgba(17, 17, 27, 0.5);
 
 * {
     border: none;
-    border-radius: 0;
-    font-family: Source Code Pro;
-    font-size: 14px;
+    border-radius: 0.1rem;
+    font-family:
+        Source Code Pro,
+        monospace;
+    font-size: 1rem;
     min-height: 0;
     padding: 0 0.15rem;
 }
@@ -31,15 +34,15 @@ tooltip label {
     background: transparent;
     color: @text;
     border-bottom: 0.1rem solid transparent;
+    transition: background 0.2s ease;
 }
-
-/* #workspaces button.focused {
-    background: lightseagreen;
-    border-bottom: 3px solid white;
-} */
 
 #workspaces button.active {
     background: @activeWorkspace;
+}
+
+#workspaces button:hover {
+    background: @hover;
 }
 
 #clock,
@@ -48,7 +51,6 @@ tooltip label {
 #pulseaudio,
 #power-profiles-daemon,
 #temperature,
-#clock,
 #tray,
 #custom-notification,
 #custom-media,
@@ -65,23 +67,23 @@ tooltip label {
 /* #battery {
     background-color: #ffffff;
     color: black;
-}
+    } */
 
-#battery.charging {
-    color: white;
-    background-color: palevioletred;
-} */
+/* #battery.charging {
+        color: white;
+        background-color: palevioletred;
+    } */
 
 /* #battery.warning:not(.charging) {
-    background: #f53c3c;
-    color: white;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: steps(12);
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-} */
+        background: #f53c3c;
+        color: white;
+        animation-name: blink;
+        animation-duration: 0.5s;
+        animation-timing-function: steps(12);
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    } */
 
 #custom-notification {
-    font-family: "NotoSansMono Nerd Font";
+    font-family: "NotoSansMono Nerd Font", monospace;
 }
